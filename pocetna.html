@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocetna</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style-nav.css">
+	<link rel="stylesheet" type="text/css" href="css/pocetna.css">
+	<script src="js/pocetna.js"></script>
+</head>
+<style>
+	body {
+		background-image: url("images/pozadina1.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.content {
+		font-size: 120%;
+		color: white;
+	}
+
+	td>tr {
+		background-color: rgba(107, 153, 119);
+	}
+
+	table {
+		color: black;
+	}
+</style>
+<body onload="ucitavanje()">
+	<div class="navigacija">
+		<a href="pocetna.html"><div>Početna</div></a>
+		<a href="gta.html"><div>Grand Theft Auto</div></a>
+		<a href="ac.html"><div>Assassin'S Creed</div></a>
+		<a href="metro.html"><div>Metro</div></a>
+		<a href="pitalica.html"><div>Pitalica</div></a>
+	</div>
+	<div class="content" id="content">
+		<h1>Početna</h1>
+
+		<p>Ovde će biti predstavljeno mojih tri omiljenih <b>serijala video igrica</b>.</p>
+		<div style="background-color: #f2f2f2; width: 340px">
+			<table border="1">
+				<tr>
+					<td>Slika</td>
+					<td colspan="2">Ime i kompanija</td>
+				</tr>
+				<tr>
+					<td rowspan="2"><a href="gta.html"><img src="images/gta.png" width="100" height="80" title="GTA Logo"></a></td>
+					<td>Grand Theft Auto</td>
+					<td>Rockstar Games</td>
+				</tr>
+				<tr>
+					<td colspan="2">Grand Theft Auto V</td>
+				</tr>
+				<tr>
+					<td rowspan="2"><a href="ac.html"><img src="images/ac.png" width="100" height="60" title="AC Logo"></a></td>
+					<td>Assassin's Creed</td>
+					<td>Ubisoft</td>
+				</tr>
+				<tr>
+					<td colspan="2">Assassin's Creed Unity</td>
+				</tr>
+				<tr>
+					<td rowspan="2"><a href="metro.html"><img src="images/metro.png" width="100" height="40" title="Metro Logo"></a></td>
+					<td>Metro</td>
+					<td>4a Games</td>
+				</tr>
+				<tr>
+					<td colspan="2">Metro Last Light</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="content-right" id="content-right">
+		<p>U koliko želite da vidite neke slike iz navedenih igara kliknite na dugme ispod.</p>
+		<br>
+		<button onclick="pocetak()">KLIK</button>
+	</div>
+	<div id="fact">Red Dead Redemption 2 najbolja igra ikada!</div>
+	<p><span class="potpis">Predrag Nikolić, IT prva godina, Indeks 56/20</span></p>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.navigacija {
+	background-color: rgb(83, 142, 237, 0.5);
+}
+
+.navigacija a div {
+	background-color: rgb(255, 0, 0, 0.5);
+	color: white;
+	text-align: center;
+	margin-left: 5px;
+	width: 150px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: inline-block;
+}
+
+.navigacija a:hover div {
+	background-color: rgb(238,235,226);
+	color: black;
+}
+
+.potpis {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 115px;
+	border: 3px solid #73AD21;
+	background-color: rgb(70, 125, 98);
+}
+
+
+.potpis:active { 
+	width: 320px;
+}

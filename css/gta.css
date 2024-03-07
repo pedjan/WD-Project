@@ -1,0 +1,37 @@
+.content-all {
+	font-size: 120%;
+}
+
+
+div#content {
+	width:45%;
+	text-align:justify;
+}
+
+#specs {
+	position: absolute;
+	top: 145px;
+	left: 50%;
+	color: white;
+	margin-right: 10px;
+	right: 0px;
+}
+
+.logo {
+	position: fixed;
+	bottom: 40px;
+	left: 45%;
+	width: 100px;
+	height: 100px;
+	transition: width 2s, height 2s;
+}
+
+.logo:hover {
+	width: 200px;
+	height: 200px;
+}
+
+.content-all>#content, #specs {
+	background-color: rgb(0, 0, 0, 0.7);
+	padding: 10px;
+}

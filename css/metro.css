@@ -1,0 +1,62 @@
+.content-all {
+	font-family: metro;
+	font-size: 110%;
+	margin: 5px;
+	text-shadow: 1px 1px 2px white;
+}
+
+div.content-left {
+	width:45%;
+	text-align:justify;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1px;
+
+}
+
+div.content-right {
+	position: absolute;
+	left: 50%;
+	top: 60px;
+	right: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 10px;
+
+}
+
+#metro_frame {
+	margin: 10px;
+	border: solid;
+	border-color: rgb(137,98,117);
+	border-width: 5px;
+	width: 90%;
+}
+
+#content2 {
+	right: 0px;
+}
+
+img {
+	border: 5px solid black;
+}
+
+table {
+	background-color: rgba(0, 0, 0, 0.7);
+	color: white;
+	text-shadow: none;
+}
+
+@font-face {
+  font-family: metro;
+  src: url(fonts/Capsmall_clean.ttf);
+}
+
+h1 {
+	font-size: 300%;
+}
+
+.content-all>.content-left, #metro_wiki, #content2 {
+	padding: 0px 10px 10px 10px;
+	background-color: rgba(255, 255, 255, 0.5);
+}

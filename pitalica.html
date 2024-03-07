@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pitalica</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style-nav.css">
+	<link rel="stylesheet" type="text/css" href="css/pitalica.css">
+	<script src="js/pitalica.js"></script>
+</head>
+<style>
+	body {
+		background-image: url("images/pozadina1.jpg");
+		background-repeat: repeat;
+		background-size: cover;
+		
+	}
+
+</style>
+<body onload="provera()">
+	<div class="navigacija">
+		<a href="pocetna.html"><div>Početna</div></a>
+		<a href="gta.html"><div>Grand Theft Auto</div></a>
+		<a href="ac.html"><div>Assassin'S Creed</div></a>
+		<a href="metro.html"><div>Metro</div></a>
+		<a href="pitalica.html"><div>Pitalica</div></a>
+	</div>
+	<div class="content">
+		<h1>Pitalica</h1>
+		<form action="zahvalnica.html" onsubmit="return check()">
+			<p>
+				<fieldset>
+					<legend>O korisniku</legend>
+					<input type="text" name="ime" id="ime" placeholder="Ime" required>
+					<input type="text" name="prezime" id="prezime" placeholder="Prezime" required>
+					<input type="text" name="email" id="email" placeholder="Email" required pattern="(?=.*[@]).{11,}">
+					<br>
+					Pol: <br>
+					<input type="radio" name="pol" value="m"> Muško<br>
+					<input type="radio" name="pol" value="z"> Žensko<br>
+					Rođendan:
+					<input type="date" id="godine" name="godine">
+				</fieldset>
+			</p>
+			<p>
+				<fieldset>
+					<legend>O sajtu</legend>
+					Šta mislite o odabiru igara?
+					<select name="content" id="odabir" required>
+						<option value="">-</option>
+						<option value="da">Sviđa mi se odabir igara</option>
+						<option value="ne">Ne sviđa mi se odabir igara</option>
+						<option value="onk">Sviđa mi se kako si predstavio igre</option>
+					</select>
+					<br>
+					Odaberi neku random boju <input type="color" name="color"><br>
+					Koje si godine imao prvi kontakt sa igrama? <input type="text" name="visit" id="godina" required pattern="[0-9]{4}">
+				</fieldset>
+			</p>
+			<p>
+				<fieldset>
+					<legend>O igrama</legend>
+					Označi igru koja ti se najviše svidela:<br>
+					<input type="checkbox" id="igra"> GTA<br>
+					<input type="checkbox" id="igra2"> AC<br>
+					<input type="checkbox" id="igra3"> Metro<br>
+					Dodaj mišljenje za neku od igara:<br>
+					<textarea id="komentar" maxlength="300"></textarea>
+				</fieldset><br>
+				<input type="submit" value="Posalji">
+			</p>
+		</form>
+	</div>
+	<p><span class="potpis">Predrag Nikolić, IT prva godina, Indeks 56/20</span></p>
+</body>
+</html>
